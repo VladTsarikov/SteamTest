@@ -11,7 +11,7 @@ public class DiscountGamePage extends BaseForm {
     private static By currentSpecial = By.xpath("//div[@class='discount_pct']");
     private static By actualPrice = By.xpath("//div[@class='game_area_purchase_game_wrapper']//div[@class='discount_final_price']");
     private static By originalPrice = By.xpath("//div[@class='game_area_purchase_game_wrapper']//div[@class='discount_original_price']");
-    private static String discountGamedecription = "//h2[contains(text(),'%s')]";
+    private static String discountGamedecription = "//h4[contains(text(),'%s')]";
     private static String discountGamedecriptionFormat = String.format(discountGamedecription, PropertyReader.getProperty("GameDescription"));
     private static By locator = By.xpath(discountGamedecriptionFormat);
     private static By btnDownloadPath = By.xpath("//a[@class='header_installsteam_btn_content']");

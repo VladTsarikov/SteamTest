@@ -20,7 +20,6 @@ public class RegularExpFinder extends BaseEntity {
         values = new ArrayList<>();
 
         while(matcher.find()) {
-            System.out.println(matcher.group(1));
             values.add(matcher.group(1));
         }
         return values;
